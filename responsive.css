@@ -1,0 +1,221 @@
+@media screen and (max-width: 780px) {
+    .header .navigation nav{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -500px;
+        font-size: 20px;
+        background-color: #00923F;
+        color: #fff !important;
+        z-index: 9;
+        padding: 50px 0;
+        padding-top: 100px;
+        transition: all 300ms linear;
+    }
+
+    .header .navigation nav.is-active{
+        top: 0;
+    }
+
+    .header .navigation nav ul li{
+        display: block;
+    }
+
+    .header .navigation nav a{
+        display: block;
+        color: #fff;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navigation .three{
+        display: block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #ecf0f1;
+        text-align: center;
+        z-index: 99;
+    }
+
+    .hamburger .line{
+        width: 50px;
+        height: 5px;
+        background-color: #00923F;
+        display: block;
+        margin: 8px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .hamburger:hover{
+        cursor: pointer;
+      } 
+
+      #hamburger-2.is-active .line{
+          background-color: #ecf0f1;
+      }
+
+      #hamburger-2.is-active .line:nth-child(1){
+        -webkit-transform: translateY(13px);
+        -ms-transform: translateY(13px);
+        -o-transform: translateY(13px);
+        transform: translateY(13px);
+      }
+      
+      #hamburger-2.is-active .line:nth-child(3){
+        -webkit-transform: translateY(-13px);
+        -ms-transform: translateY(-13px);
+        -o-transform: translateY(-13px);
+        transform: translateY(-13px);
+      }
+
+    .hero-text{
+        padding: 200px 20px !important;
+    }
+    .hero-text h1{
+        font-size: 40px;
+    }
+    .hero-text .buttons{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .hero-text .buttons a{
+        width: 100%;
+    }
+    .hero .delivery{
+        left: -170px;
+    }
+    .div1 img, .div2 img{
+        width: 500%
+    }
+    .section{
+        padding: 100px 20px;
+    }
+    .features, .about, .order-process .order-form form .grid, .testimonials-cont, .contact, .footer{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    .about .textbox{
+        padding-left: 20px;
+    }
+    .contact .contact-form{
+        position: relative;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+    }
+    .contact{
+        overflow: hidden;
+    }
+    .footer{
+        overflow-x: hidden;
+    }
+    .footer .delivery{
+        position: absolute;
+        transform: scaleX(-1);
+        right: -30px;
+        bottom: 250px;
+        width: 250px;
+    }
+    .footer .area{
+        text-align: center;
+    }
+
+    @keyframes marquee {
+        from {
+          transform: translateX(130%);
+        }
+        to {
+          transform: translateX(-130%);
+        }
+      }
+      
+      @keyframes marquee2 {
+        from {
+          transform: translateX(30%);
+        }
+        to {
+          transform: translateX(-260%);
+        }
+      }  
+}   
+
+@media screen and (max-width: 500px) {
+  .logo{
+    max-width: 100px;
+  }
+  .head-btn .button{
+    padding: 10px;
+    width: max-content
+  }
+  #hamburger-2{
+    position: relative;
+    left:10px;
+    max-width: 30px;
+  }
+  #hamburger-2 .line{
+    width: 40px;
+  }
+  .footer .delivery{
+    z-index: 9999;
+  }
+  .hero-text .order-process{
+        padding: 40px 0;
+    }
+
+    .hero-text .order-process .order-form{
+        padding: 40px 20px;
+        max-height: 600px;
+        overflow: auto;
+    }
+
+    .hero-text .stepper-wrapper{
+        overflow: auto;
+    }
+
+    .hero-text .section-heading h2{
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
+
+    .control-group .grido{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    label{
+      white-space: normal;
+    }
+
+    .hero-text .section-heading .stepper-wrapper .stepper-item{
+      padding: 0 30px;
+    }
+    @keyframes marquee {
+        from {
+          transform: translateX(300px);
+        }
+        to {
+          transform: translateX(-300px);
+        }
+      }
+      
+      @keyframes marquee2 {
+        from {
+          transform: translateX(100px);
+        }
+        to {
+          transform: translateX(-600px);
+        }
+      }  
+}
+
+@media screen and  (min-width: 500px) and (max-width: 540px) {
+
+}
+
+@media screen and (max-width: 370px) {
+
+}

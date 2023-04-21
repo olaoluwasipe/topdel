@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopDel Logistics</title>
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/js/locomotive.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <a href="index.html" class="logo">
+                <img src="assets/topdel_logo.png" alt="TopDel logo">
+            </a>
+        </div>
+        <div class="navigation">
+            <div class="three col">
+                <div class="hamburger" id="hamburger-2">
+                  <span class="line"></span>
+                  <span class="line"></span>
+                  <span class="line"></span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="nav-item"><a href="#">About</a></li>
+                    <li class="nav-item"><a href="#">Services</a></li>
+                    <li class="nav-item"><a href="#">Find Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="head-btn">
+            <a href="tel:+234 802 222 4114" class="button">contact us</a>
+        </div>
+    </div>
+
+    <main data-scroll-container>
+        <div data-scroll-section class="hero">
+            <div style="padding: 50px 0;" data-scroll-section class="hero-text">
+                <div id="order-process" class="order-process section">
+                    <div class="section-heading">
+                        <h2>Make An Order</h2>
+                        <div class="stepper-wrapper">
+                            <div data-step="1" class="stepper-item active">
+                              <div class="step-counter">1</div>
+                              <div class="step-name">Pick Your LGA</div>
+                            </div>
+                            <div data-step="2" class="stepper-item">
+                              <div class="step-counter">2</div>
+                              <div class="step-name">Package Type</div>
+                            </div>
+                            <div data-step="3" class="stepper-item">
+                              <div class="step-counter">3</div>
+                              <div class="step-name">Shipping Information</div>
+                            </div>
+                            <div data-step="4" class="stepper-item">
+                              <div class="step-counter">4</div>
+                              <div class="step-name">Payment & Review</div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="order-form section">
+                        <form action="">
+                            <div class="grid 1">
+                                <div class="box">
+                                    <h3>Pick-Up Location</h3>
+                                    <div class="control-group">
+                                        <label for="pick-up">Select A Local Government Area:</label>
+                                        <select style="width: 100%" id="pick-up" class="select-lga form-field">
+                                            <option></option>
+                                            <option value="1">Alimosho</option>
+                                            <option value="2">Ajeromi-Ifelodun</option>
+                                            <option value="3">Kosofe</option>
+                                            <option value="4">Mushin</option>
+                                            <option value="5">Oshodi-Isolo</option>
+                                            <option value="6">Ojo</option>
+                                            <option value="7">Ikorodu</option>
+                                            <option value="8">Surulere</option>
+                                            <option value="9">Agege</option>
+                                            <option value="10">Ifako-Ijaiye</option>
+                                            <option value="11">Somolu</option>
+                                            <option value="12">Amuwo-Odofin</option>
+                                            <option value="13">Lagos Mainland</option>
+                                            <option value="14">Ikeja</option>
+                                            <option value="15">Eti-Osa</option>
+                                            <option value="16">Badagry</option>
+                                            <option value="17">Apapa</option>
+                                            <option value="18">Lagos Island</option>
+                                            <option value="19">Epe</option>
+                                            <option value="20">Ibeju-Lekki</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <h3>Drop-Off Location</h3>
+                                    <div class="control-group">
+                                        <label for="drop-off">Select A Local Government Area:</label>
+                                        <select style="width: 100%" id="drop-off" class="select-lga form-field">
+                                            <option></option>
+                                            <option value="1">Alimosho</option>
+                                            <option value="2">Ajeromi-Ifelodun</option>
+                                            <option value="3">Kosofe</option>
+                                            <option value="4">Mushin</option>
+                                            <option value="5">Oshodi-Isolo</option>
+                                            <option value="6">Ojo</option>
+                                            <option value="7">Ikorodu</option>
+                                            <option value="8">Surulere</option>
+                                            <option value="9">Agege</option>
+                                            <option value="10">Ifako-Ijaiye</option>
+                                            <option value="11">Somolu</option>
+                                            <option value="12">Amuwo-Odofin</option>
+                                            <option value="13">Lagos Mainland</option>
+                                            <option value="14">Ikeja</option>
+                                            <option value="15">Eti-Osa</option>
+                                            <option value="16">Badagry</option>
+                                            <option value="17">Apapa</option>
+                                            <option value="18">Lagos Island</option>
+                                            <option value="19">Epe</option>
+                                            <option value="20">Ibeju-Lekki</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid 2">
+                                <div class="box">
+                                    <h3>What's In Your Package?</h3>
+                                    <div class="control-group">
+                                        <label for="package">Select at most 3 options:</label>
+                                        <select style="width: 100%" name="package[]" id="package" class="package form-field" multiple>
+                                            <option value="1">Clothing & Textiles</option>
+                                            <option value="2">Cooked Food or Ingredients</option>
+                                            <option value="3">Technological Devices</option>
+                                            <option value="4">Drinks & Beverages</option>
+                                            <option value="5">Glass Items</option>
+                                            <option value="6">Furniture & Household Items</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="box">
+                                    <h3>How Large Is Your Package?</h3>
+                                    <div class="control-group">
+                                        <label for="size">Choose the size of your package. <a style="display: inline-block;" class="track" href="">View the size guide here</a></label>
+                                        <div class="checkboxes grido">
+                                        <article class="feature1">
+                                            <input type="radio" name="size" class="form-field" id="feature1"/>
+                                            <div>
+                                              <span>
+                                                Small
+                                              </span>
+                                            </div>
+                                          </article>
+
+                                          <article class="feature1">
+                                            <input type="radio" name="size" class="form-field" id="feature1"/>
+                                            <div>
+                                              <span>
+                                                Medium
+                                              </span>
+                                            </div>
+                                          </article>
+
+                                          <article class="feature1">
+                                            <input type="radio" name="size" class="form-field" id="feature1"/>
+                                            <div>
+                                              <span>
+                                                Large
+                                              </span>
+                                            </div>
+                                          </article>
+                                        </div>
+                                    </div>
+                                        
+                                </div>
+
+                                <div class="box">
+                                    <h3>How Many Packages Are There?</h3>
+                                    <div class="control-group">
+                                        <label for="num-packages">Type in the number of packages we'd be recieving</label>
+                                        <input type="number" value="1" class="form-field" name="num-packages" id="num-packages">
+                                    </div>  
+                                </div>
+
+                                <div class="box">
+                                    <h3>Special Instructions?</h3>
+                                    <div class="control-group">
+                                        <label for="special-instructions">Type in any special instructions on package handling</label>
+                                        <textarea name="special-instructions" id="special-instructions"></textarea>
+                                    </div>   
+                                </div>
+                            </div>
+                            <div class="grid 3">
+                                <div class="box">
+                                    <h3>Sender's Information</h3>
+                                    <div class="control-group">
+                                        <input type="text" class="form-field" name="sdname" id="sdname" placeholder="Full Name">
+                                        <input type="text" class="form-field" name="sdstreet" id="sdstreet" placeholder="Street Address">
+                                        <input type="text" name="sdhouseNum" id="sdhouseNum" placeholder="Business/Complex Name and Unit">
+                                        <input type="text" class="form-field" disabled name="sdlga" id="sdlga" placeholder="Local Government Area">
+                                        <input type="email" class="form-field" name="sdemail" id="sdemail" placeholder="Email Address">
+                                        <input type="tel" class="form-field" name="sdtel" id="sdtel" placeholder="Telephone Number">
+                                    </div>
+                                </div>
+                                
+                                <div class="box">
+                                    <h3>Reciever's Information</h3>
+                                    <div class="control-group">
+                                        <input type="text" class="form-field" name="doname" id="doname" placeholder="Full Name">
+                                        <input type="text" class="form-field" name="dostreet" id="dostreet" placeholder="Street Address">
+                                        <input type="text" name="dohouseNum" id="dohouseNum" placeholder="Business/Complex Name and Unit">
+                                        <input type="text" class="form-field" disabled name="dolga" id="dolga" placeholder="Local Government Area">
+                                        <input type="tel" class="form-field" name="dotel" id="dotel" placeholder="Telephone Number">
+                                        <span  style="display: inline-block;"><a href="#" style="display: inline-block;" class="button">Log In</a> to save this address</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid 4">
+                                <div class="box">
+                                    <h3>Make Payment</h3>
+                                    <div class="control-group">
+                                        <form>
+                                            <script src="https://checkout.flutterwave.com/v3.js"></script>
+                                            <a style="cursor: pointer;" class="button" id="pay-button">Pay Now</a>
+                                          </form>
+                                    </div>
+                                </div>
+                                
+                                <div class="box">
+                                    <!-- <h3>Drop-Off Location</h3> -->
+                                    <div class="control-group">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin-top: 30px; text-align: center;" class="button-box">
+                                <a href="#" id="next-btn" class="button">next</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="background">
+                <div class="back-layer">
+                    <div class="div1">
+                        <img data-scroll data-scroll-speed="-3" src="assets/images/bg-breakdown/back-layer.png" width="100%" alt="">
+                    </div>
+                    <div class="div2">
+                        <img data-scroll data-scroll-speed="-3" src="assets/images/bg-breakdown/back-layer.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="middle-layer">
+                    <div class="div1">
+                        <img data-scroll data-scroll-speed="-2" src="assets/images/bg-breakdown/middle-layer.png" width="100%" alt="">
+                    </div>
+                    <div class="div2">
+                        <img data-scroll data-scroll-speed="-2" src="assets/images/bg-breakdown/middle-layer.png" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="front-layer">
+                    <div class="div1">
+                        <img src="assets/images/bg-breakdown/front-layer.png" width="100%" alt="">
+                    </div>
+                    <div class="div2">
+                        <img src="assets/images/bg-breakdown/front-layer.png" width="100%" alt="">
+                    </div>
+                </div>
+            </div>
+            <img class="delivery" src="assets/images/delivery-man.png" alt="">
+        </div>
+
+        <div data-scroll-section class="contact section">
+            <div class="box">
+                <div class="section-heading">
+                    <h2 style="margin-bottom: 20px;">Fill The Form and Let's Get Talking.</h2>
+                    <p>Send us a message so we can talk about your delivery needs and provide you the best services necessary.</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" class="form-field" name="name" id="name" placeholder="Full Name">
+                    <input type="email" class="form-field" name="email" id="email" placeholder="Email Address">
+                    <input type="tel" class="form-field" name="tel" id="tel" placeholder="Telephone Number">
+                    <textarea name="message" id="message" rows="7" placeholder="Message"></textarea>
+                    <div class="terms">
+                        <input type="checkbox" name="terms" id="terms">
+                        <label for="terms">I accept your <a href="">terms and conditions</a></label>
+                    </div>
+                    <a href="" class="button">Send message</a>
+                </form>
+            </div>
+        </div>
+
+        <div data-scroll-section class="footer">
+            <div class="delivery">
+                <img src="assets/images/delivery-man.png" alt="">
+            </div>
+            <div class="area">
+                <div class="logo">
+                    <img src="assets/topdel_logo.png" alt="TopDel logo">
+                </div>
+            </div>
+            <div class="area">
+                <p>© 2022 TopDel Logistics. All rights reserved. </p>
+            </div>
+            <div class="area">
+                <div class="social-icons">
+                    <a href="#" class="social">
+                        <img src="assets/images/social-icons/fbook.png" alt="faebook icon">
+                    </a>
+
+                    <a href="#" class="social">
+                        <img src="assets/images/social-icons/insta.png" alt="instagram icon">
+                    </a>
+
+                    <a href="#" class="social">
+                        <img src="assets/images/social-icons/twitt.png" alt="twitter icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="pop-up">
+        <div class="pop-up-block section">
+            <div class="section-heading">
+                <h2>Package Size Guide</h2>
+                <i class="pop-close fa fa-times"></i>
+            </div>
+            <img src="assets/images/box-sizes.jpg" alt="">
+        </div>
+    </div>
+
+
+
+    <img src="assets/images/tawkto.png" alt="tawkto-fake" class="tawkto">
+    <script src="assets/js/locomotive.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
